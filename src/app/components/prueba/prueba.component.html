@@ -1,0 +1,66 @@
+<!--
+    Hey! Thanks for looking at my code! You win a cookie. :) The nice kind with chocolate chips.
+
+    This page was originally created for the Personal Portfolio Webpage challenge on FreeCodeCamp's Front End Development Certification course. It's totally responsive, and the first web page I ever coded from scratch.
+
+    Enjoy, and I hope you find what you're looking for! If you have questions or want to get in touch, please do: hello@vickylai.com.
+-->
+<div class="container-fluid" id="top">
+  <!-- Awesome content begins here! -->
+
+  <!-- Super sweet intro heading -->
+  <div class="pagehead">
+    <h1 class="fade-in one intro" style="text-align: center;">Hola! Soy Erick Bran.</h1>
+    <p class="fade-in two blurb" style="text-align: center;">Bienvenido a este generador de Tablas de Verdad. Puedes
+      inicar sesion para tener una mejor experiencia.</p>
+  </div>
+  <div class="fade-in three main">
+    <div class="social-icons row">
+      <div class="col-md-4 col-md-offset-4">
+        <a href="https://twitter.com/vickylaiio" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/vickylaiio" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://codepen.io/vickylaiio/" target="_blank"><i class="fa fa-codepen"></i></a>
+      </div>
+    </div>
+    <!-- End of intro heading -->
+    <hr>
+    <!-- Tell them all about it! -->
+    <div class="content" id="about">
+      <h2 class="section-head">¿Quien soy?</h2>
+
+      <div class="clr-row clr-justify-content-center">
+        <div class="circular--portrait">
+          <img src="assets/img/IMG_20210316_174732_1-removebg-preview.png" />
+        </div>
+        <div class="clr-row clr-justify-content-center">
+          <p class="highlight-text">Estudiante de la Universidad Mariano Galvez</p>
+          <p>Actualmente me encuentro cursando el Primer Semestre de la Ingenieria en Sistemas. Actualmente trabajo como
+            profesor en
+            el Centro Educativo Tecnico Laboral Kinal, del cual soy graduado; y en We Are Human Brands, empresa dedicada
+            al desarrollo de paginas web. Poseo un Profesorado en Educacacion en TIC's en la Universidad del Istmo de
+            Guatemala.
+          </p>
+        </div>
+      </div>
+      <div class="nav"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
+    </div>
+  </div>
+</div>
+
+<!-- Cool scroll effect from this guy: https://gist.github.com/flesler/ -->
+<!-- Include jQuery from somewhere, must use version 1.8 or above -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include latest jquery.scrollTo, can download from https://github.com/flesler/jquery.scrollTo/releases -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+<!-- Initialize the plugin, the contents of the script can be inlined here, of course -->
+<script type="text/javascript" src="js/init.js"></script>
+<script>
+  // Bind to the click of all links with a #hash in the href
+  $('a[href^="#"]').click(function (e) {
+    // Prevent the jump and the #hash from appearing on the address bar
+    e.preventDefault();
+    // Scroll the window, stop any previous animation, stop on user manual scroll
+    // Check https://github.com/flesler/jquery.scrollTo for more customizability
+    $(window).stop(true).scrollTo(this.hash, { duration: 500, interrupt: false });
+  });
+</script>

@@ -1,0 +1,56 @@
+<div class="clr-row clr-justify-content-center">
+  <div class="clr-col-10 clr-align-self-center">
+    <h1 style="text-align: center;">Generador de Tabla de Verdad</h1>
+    <clr-input-container>
+      <label>Preposicion</label>
+      <input clrInput placeholder="Ingresar aqui" value="a => b" id="input" />
+    </clr-input-container>
+    <button class="btn btn-outline btn-sm" id="calculate">
+      <cds-icon shape="check"></cds-icon>
+    </button>
+
+    <div style="text-align: center;">
+      <div class="clr-row clr-justify-content-center">
+        <div class="clr-col-10 clr-align-self-center">
+          <div class="card">
+            <div class="card-block">
+              <div class="card-text">
+                <p>Para ingresar una preposicion puede utilizar los siguientes:
+                <ul class="list">
+                  <li>
+                    <strong>&amp;</strong> = Conjuntor (y)
+                  </li>
+                  <li>
+                    <strong>|</strong> = Disyuntor (o, v)
+                  </li>
+                  <li>
+                    <strong>=&gt;</strong> = Condicionador (→, si... entonces...)
+                  </li>
+                  <li>
+                    <strong>&lt;=&gt;</strong> = Bicondicionador (↔, Si y solo si...)
+                  </li>
+                  <li>
+                    <strong>!</strong> = Negacion (~, no)
+                  </li>
+                </ul>
+                Puede usar parentesis "()", si lo necesita. Para comparar multiples preposiciones usar coma (,).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none;" id="george_container">
+      <pre id="george_result"></pre>
+      <button id="hide_george">Hide</button>
+    </div>
+    <div id="wrapper">
+      <div id="result">
+        <button style="display: none;" id="george">Export ASCII</button>
+      </div>
+    </div>
+
+
+  </div>
+</div>

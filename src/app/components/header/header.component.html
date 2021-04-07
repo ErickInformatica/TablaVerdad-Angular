@@ -1,0 +1,21 @@
+<clr-header class="header-6 header">
+  <div class="branding"><a class="logo-and-title" routerlink="/" href="/"><span
+              class="clr-icon clarity-logo"><img class="responsive-logo" src="/assets/img/table.png" alt=""></span><span class="title">Tabla de Verdad</span></a></div>
+  <div class="divider"></div>
+  <div class="header-nav" [clr-nav-level]="1">
+      <a class="nav-link" id="home-link" routerLink="/principal" routerLinkActive="active">
+          <span class="nav-text">Inicio</span>
+      </a>
+      <a class="nav-link" href="/tableGenerator" routerLinkActive="active">
+          <span class="nav-text">Generador</span>
+      </a>
+  </div>
+  <div class="header-actions" >
+    <a class="nav-link" routerLink="/login" routerLinkActive="active" >
+      <span class="nav-text">Login</span>
+    </a>
+    <a class="nav-link" routerLink="/register" routerLinkActive="active" >
+      <span class="nav-text">Registro</span>
+    </a>
+  </div>
+</clr-header>

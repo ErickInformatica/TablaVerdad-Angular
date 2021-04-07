@@ -1,0 +1,29 @@
+<div class="login-wrapper">
+  <form class="login pAlingCenter">
+    <section class="title">
+      <img class="responsive-logo" src="/assets/img/table.png" alt="">
+          <h3 class="welcome">Bievenidos al</h3>
+          Generador de Tablas de Verdad
+          <h5 class="hint">Registre su Correo aquí</h5>
+    </section>
+    <div class="login-group">
+      <clr-input-container>
+        <label class="clr-sr-only">Correo Electronico</label>
+        <input type="text"  name="email" clrInput
+          placeholder="Correo Electronico" />
+      </clr-input-container>
+      <clr-password-container>
+        <label class="clr-sr-only">Contraseña</label>
+        <input type="password"  clrPassword
+          placeholder="Contraseña" />
+      </clr-password-container>
+      <clr-password-container>
+        <label class="clr-sr-only">Confirmar Contraseña</label>
+        <input type="password" clrPassword
+          placeholder="Contraseña" />
+      </clr-password-container>
+      <button type="submit" class="btn btn-primary">Registrar</button>
+      <button class="btn btn-link" type="button" routerLink="/login">Regresar a Iniciar Sesión</button >
+    </div>
+  </form>
+</div>
